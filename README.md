@@ -3,6 +3,7 @@ AiStockPicker nutzt LLMs, um Aktien basierend auf Trends, Bewertungen und Finanz
 
 ## Idee
 LLMs haben genügend Informationen/Wissen, um Aktien und deren Trends zu analysieren und auszuwählen. AiStockPicker nutzt diese Fähigkeit, um wöchentlich drei Top-Aktien aus verschiedenen Kategorien zu identifizieren und zu präsentieren.
+Grok wird dabei für eine erste, schnelle Auswahl, basierend auf dem eigenen Wissen und X-Daten genutzt. Anschließend wird GPT-3o Deep Research für eine tiefere Analyse und Bewertung der ausgewählten Aktien verwendet.
 
 ## Kernfunktionen
 - **Verschiedene Aktientypen**: Jede Woche Top-3 Aktien aus den Bereichen: Unterbewertete Aktien, Trendaktien und besondere Börsenereignisse.

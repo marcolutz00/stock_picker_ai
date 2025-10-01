@@ -1,0 +1,23 @@
+{
+  "name": "aistockpicker",
+  "version": "1.0.0",
+  "description": "AiStockPicker nutzt LLMs, um Aktien basierend auf Trends, Bewertungen und Finanzdaten zu analysieren und auszuwählen.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcolutz00/stock_picker_ai.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcolutz00/stock_picker_ai/issues"
+  },
+  "homepage": "https://github.com/marcolutz00/stock_picker_ai#readme",
+  "dependencies": {
+    "sequelize": "^6.37.7"
+  }
+}
