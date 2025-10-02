@@ -7,8 +7,8 @@ class Llm_client {
         this.strategy = strategy;
     }
 
-    private callApi(): string {
-        return this.strategy.pick_stocks();
+    private async callApi(): Promise<string> {
+        return await this.strategy.pick_stocks();
     }
 
 

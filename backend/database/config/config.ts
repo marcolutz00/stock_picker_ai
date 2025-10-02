@@ -8,11 +8,16 @@ if(!dbConf){
     throw new Error(`Keine DB-Konfiguration für Stage "${STAGE}" gefunden.`);
 } 
 
-const sequelize = new Sequelize(dbConf.database, dbConf.username, dbConf.password, {
-    "host": dbConf.host,  
-    "port": dbConf.port,         
-    dialect: 'postgres'
-})
+const sequelize = new Sequelize(
+    dbConf.database, 
+    dbConf.username, 
+    dbConf.password, 
+    {
+        "host": dbConf.host,  
+        "port": dbConf.port,         
+        dialect: 'postgres'
+    }
+);
 
 export async function initializeDbConnection() {
     await sequelize.authenticate();
@@ -23,4 +28,4 @@ export async function closeDbConnection() {
     await sequelize.close();
 }
 
-export default { sequelize };
+export default sequelize;
