@@ -96,7 +96,13 @@ function getSystemPromptIndepth(): string {
                 "category": "Undervalued" | "Trend" | "Special Event",
                 "recommendation": "Buy" | "Sell",
                 "reason": "string",          // concise thesis (1–2 paragraphs, max ~10 sentences)
-                "full_report": "string"     // detailed Markdown-style analyst report with headings
+                "full_report": {
+                    "summary": "string",     // detailed Markdown-style analyst with around 10 sentences
+                    "fundamentals": "string", // detailed fundamentals analysis (e.g., P/E, P/B, growth, margins)
+                    "trends": "string", // detailed market/trend analysis (e.g., sector, sentiment, social signals like X/Twitter)
+                    "risks": "string", // detailed risks analysis (e.g., competition, regulatory, market risks)
+                    "reasoning": "string" // detailed investment thesis and outlook
+                    }
                 }
             ]
         }
@@ -104,7 +110,7 @@ function getSystemPromptIndepth(): string {
         Rules:
         - Always include both "reason" and "full_report".
         - "reason" is a concise summary suitable for quick database queries and UI display.
-        - "full_report" is a narrative analysis with markdown headings (Company Overview, Financial Analysis, Market & Trend Analysis, Risks, Investment Thesis & Outlook).
+        - "full_report" is a detailed analysis with markdown headings (Company Overview, Financial Analysis, Market & Trend Analysis, Risks, Investment Thesis & Outlook). It is structured as shown above.
         - Return valid JSON only.
         - All fields must be present. If unknown, use null (except arrays: use [] when empty).
     `;
