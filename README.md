@@ -13,7 +13,7 @@ Grok wird dabei für eine erste, schnelle Auswahl, basierend auf dem eigenen Wis
 - **UI**: Einfaches UI zur Anzeige der ausgewählten Aktien und deren Analysen.
 
 ## Technologie-Stack
-- **Backend**: Typescript, Node.js
-- **Frontend**: React, TailwindCSS
+- **Backend**: Typescript, Node.js, Fastify
+- **Frontend**: React, Next.js, TailwindCSS
 - **LLM Integration**: Grok 4.0, GPT-3o Deep Research
 - **Datenbank**: PostgreSQL
